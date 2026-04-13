@@ -66,16 +66,15 @@ pip install -e .
 # Clone and set up LLMLingua for compression capabilities
 git clone https://github.com/microsoft/LLMLingua.git LLMLingua_repo
 mv LLMLingua_repo/llmlingua ./
-rm -rf LLMLingua_repo
 ```
 
 ### Step 4: Prepare Datasets 📂
 
 We train our model on the MATH dataset and evaluate on four test sets:
 - **MATH500**: A 500-problem subset of the MATH test set (in-distribution benchmark)
-- **GSM8K**: Out-of-distribution evaluation
-- **AIME2024**: Out-of-distribution evaluation
-- **TheoremQA**: Targeting symbolic STEM reasoning
+- **GSM8K**: An out-of-distribution benchmark for mathematical reasoning
+- **AIME2024**: An out-of-distribution benchmark for advanced mathematical reasoning
+- **TheoremQA**: An out-of-distribution benchmark for broader general reasoning abilities
 
 ```bash
 # Download all datasets
